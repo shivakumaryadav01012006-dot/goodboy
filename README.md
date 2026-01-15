@@ -1,24 +1,52 @@
 # goodboy
 this  is my first project
 <br>
-writer- Shiva kumar yadav
-<!doctype html>
-<html>
-<head><title>shiva kumar </title>
+writer- Shiva kumar yadav 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample HTML Form</title>
 </head>
 <body>
-  <h3>who  is shiva best friend </h3>
-  <form>
-    first  name :<input type ="text  placeholder"="enter your name "><br>
-    last name :<input type =" enter your name "><br>
-    phone no:<input type ="text"><br>
-    select gender<input type ="radio " name ="gender">
-    <input type ="radio" name ="gender">
-    <input type ="radio" name ="gender">
-  <br>
-    <button type =submit value ="submit" > SUBMIT</button>
+  <h2>Registration Form</h2>
+  <form action="/submit" method="post">
+    
+    <!-- Text input -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <!-- Email input -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <!-- Password input -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <!-- Radio buttons -->
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+    
+    <!-- Dropdown -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select><br><br>
+    
+    <!-- Checkbox -->
+    <input type="checkbox" id="subscribe" name="subscribe" value="newsletter">
+    <label for="subscribe">Subscribe to newsletter</label><br><br>
+    
+    <!-- Submit button -->
+    <input type="submit" value="Register">
+    
   </form>
 </body>
 </html>
-  </form>
-</body>
+
